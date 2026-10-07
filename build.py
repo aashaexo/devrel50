@@ -24,8 +24,9 @@ put(L,10,("samclaassen","Sam Claassen","AI at Type"))
 MUSKAN=os.environ.get("MUSKAN")
 if MUSKAN: put(L,10,(MUSKAN,"Muskan Kalra",os.environ.get("MUSKAN_LINE","")))
 L.append(("georgepickett","George Pickett","DevRel at p0"))
+L+=[("muskan_kalra24","Muskan Kalra","ex Head of DevRel at Polygon"),("sarahli","Sarah Li","Developer relations"),("BlendiByl","Blendi","Engineering at fal"),("nutlope","Hassan","DX Lead at Together AI"),("paw_lean","Pauline Narvas","DevEx and Community at OpenAI")]
 ORIG=list(L)
-PIN={"mattyp":0,"dabit3":1,"0xyoussea":2,"0xJuliechen":3,"georgepickett":4,"aashatwt":5,"skeptrune":6,"samclaassen":10}
+PIN={"mattyp":0,"dabit3":1,"0xyoussea":2,"0xJuliechen":3,"georgepickett":4,"paw_lean":5,"nutlope":10,"aashatwt":6,"skeptrune":7,"muskan_kalra24":8,"samclaassen":12,"sarahli":14,"BlendiByl":16}
 rest=[x for x in L if x[0] not in PIN]; L=[None]*len(L)
 for x in [y for y in sum([[z] for z in rest],[])]: pass
 byh={x[0]:x for x in L if x}
